@@ -7,11 +7,13 @@
                      </div>
                      <div class="call-support" style="display:flex; justify-content: space-around;">
                          <p style="font-size: 24px;">
-                         <img src="https://cdn1.iconfinder.com/data/icons/emoji-of-smiley-color/100/smiley_wave-512.png" alt="Wave Emoji" style="width:44px; height:44px; vertical-align:middle;">
-                            <?php if(isset($_SESSION['tendangnhap'])){?>
-                            Xin Chào: <span><?= $_SESSION['tendangnhap']?> </span>
-                            <?php }else{ echo " ";}?>
-                         <p/>
+                             <img src="https://cdn1.iconfinder.com/data/icons/emoji-of-smiley-color/100/smiley_wave-512.png" alt="Wave Emoji" style="width:44px; height:44px; vertical-align:middle;">
+                                <?php if (isset($_SESSION['tendangnhap']) && !empty($_SESSION['tendangnhap'])) { ?>
+                                    Xin Chào: <span><?= htmlspecialchars($_SESSION['tendangnhap']); ?></span>
+                                <?php } else { ?>
+                                    Xin chào: Khách vãng lai!
+                                <?php } ?>
+                        </p>
                      </div>
                  </div>
                  <div class="col-md-2 col-sm-3">

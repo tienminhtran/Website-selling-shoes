@@ -6,8 +6,8 @@
                 <div class="col-md-6 col-sm-4">
                     <div class="footer-contact">
                         <div style="text-align:center">
-                            <h3 style="color:#fff">Running Store</h3>
-                            <p>Uy tín - Chất lượng - Thời thượng</p>
+                            <p>Uy tín - Chất lượng - Sang trọng</p>
+                            <p>Running Gò Vấp một khi đã mua thì không sợ Vấp</p>
                         </div>
 
                         <ul class="address">
@@ -37,7 +37,7 @@
                                 <li><a href="#">Điều khoản sử dụng</a></li>
                                 <li><a href="#">Chính sách bảo mật</a></li>
                                 <li><a href="#">Thuế-Giá trị gia tăng</a></li>
-                                <!-- <li><a href="#">Về chúng tôi</a></li> -->
+                            
                             </ul>
                         </div>
                     </div>
@@ -52,8 +52,7 @@
                                 <li><a href="about-us.html">Về chúng tôi</a></li>
                                 <li><a href="#">Cửa hàng</a></li>
                                 <li><a href="#">Bản quyền</a></li>
-                                <!-- <li><a href="#">Orders and Returns</a></li>
-                                <li><a href="#">Site Map</a></li> -->
+                                
                             </ul>
                         </div>
                     </div>
@@ -68,7 +67,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="footer-copyright">
-                        <p>Copyright &copy; 2023 <a href="#"> tientot36@gmail.com</a>. Thanks You</p>
+                        <h5>Copyright &copy; 2023 <a href="#"> tientot36@gmail.com</a>. Thanks You</h5>
                     </div>
                 </div>
                 <div class="col-sm-6">
