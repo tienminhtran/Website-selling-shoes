@@ -886,7 +886,7 @@ body {
     margin-top: 30px;
 }
 .level-pro-new , .level-pro-sale {
-    background-color: #5eb4c1;
+    background-color: #fafafa;
     color: #fff;
     font-family: "Montserrat",sans-serif;
     min-width: 78px;
@@ -3795,3 +3795,4 @@ iframe{ width: 100%!important;}
     width: 1170px!important;
 }
 }
+/*----------------------------------------*/

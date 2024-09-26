@@ -19,7 +19,8 @@
                     <div class="col-md-12">
                         <div class="single-product">
                             <div class="level-pro-new">
-                                <span>new</span>
+                                <img src="https://websitearchive2020.nepa.gov.jm/new/images/gif/new4.gif" alt="Animated Icon" style="width: 50px; height: 50px;">
+
                             </div>
                             <div class="product-img">
                                 <a href="?action=chitietmathang&id=<?= $value['idSP'] ?>&idLoaiSP=<?= $value['idLoaiSP'] ?>" title="" class="thumb">
@@ -41,13 +42,13 @@
                                 </div>
                                 <div class="price-rating">
                                     <span><?= number_format($value['Dongia']); ?> VND</span>
-                                    <!-- <div class="ratings">
+                                    <div class="ratings">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star-half-o"></i>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +83,8 @@
                             <div class="col-md-12">
                                 <div class="single-product">
                                     <div class="level-pro-new">
-                                        <span>new</span>
+                                        <img src="https://websitearchive2020.nepa.gov.jm/new/images/gif/new4.gif" alt="Animated Icon" style="width: 50px; height: 50px;">
+
                                     </div>
                                     <div class="product-img">
                                         <a href="?action=chitietmathang&id=<?= $value['idSP'] ?>&idLoaiSP=<?= $value['idLoaiSP'] ?>" title="" class="thumb">
@@ -104,13 +106,13 @@
                                         </div>
                                         <div class="price-rating">
                                             <span><?= number_format($value['Dongia']); ?> VND</span>
-                                            <!-- <div class="ratings">
+                                            <div class="ratings">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star-half-o"></i>
-                                            </div> -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -66,7 +66,8 @@
                         </fieldset>
                       </form>
                       <div class="text-center">
-                        <a data-toggle="tab" href="#popular" style="margin-right:15px;" class="tk">Đăng ký tài khoản? </a>
+                        <a href="?action=dangky" style="margin-right: 15px;" class="tk">Đăng ký tài khoản?</a>
+                        <!-- <a data-toggle="tab" href="#popular" style="margin-right:15px;" class="tk">Đăng ký tài khoản? </a> -->
                         <a href="?action=quenmatkhau" class="tk">Quên mật khẩu?</a>
                       </div>
                     </div>

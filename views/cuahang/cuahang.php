@@ -162,31 +162,39 @@
                     <center><i style="font-size: 20px;" class="fa fa-eye"></i></center>
                   </a>
                 </div> -->
+                 <!-- Display "Out of Stock" icon if quantity is 0 -->
+                 <?php if ($value['soluong'] == 0) { ?>
+                        <div class="out-of-stock">
+                            <img src="/images/sold_out.png" alt="Out of Stock" />
+                        </div>
+                  <?php } ?>
 
+                    <!-- Display Sale Percentage if there's a promotion -->
+                  <?php if ($value['giatriKM'] != 0) { ?>
+                        <div class="sale-badge">
+                          <img src="images/sales.png" alt="Sale Badge">
+                          <span class="sale-text"><?= $value['giatriKM'] ?>%</span>                           
+                         <!-- <img src="/images/sales.png" style="width: 50px; " alt="Sales"/> -->
+                        </div>
+                  <?php } ?>
 
-                <div class="actions">
-                  <a href="?action=giohang&act=add_giohang&id=<?= $value['idSP'] ?>">
-                    <button onclick="" type="submit" class="cart-btn" title="Add to cart">Thêm vào giỏ</button></a>
-                  <ul class="add-to-link">
-                    <li><a class="modal-view" href="?action=chitietmathang&id=<?= $value['idSP'] ?>&idLoaiSP=<?= $value['idLoaiSP'] ?>"> <i class="fa fa-search"></i></a></li>
-                  </ul>
-                </div>
 
                 <div class="product-price">
                   <div class="product-name">
+                    
                     <a href="" title="" class="name-product"> <?php echo $value['tenSP'] ?> </a>
                   </div>
                   <!-- <div class="price-rating">
                     <span><?= number_format($value['Dongia']); ?> VND</span>
                   </div> -->
                   <div class="price-rating">
-                    <span>size: <?php echo $value['size'] ?> </span>
+                    <span>Size: <?php echo $value['size'] ?> </span>
                   </div>
                   <div class="price-rating">
                     <span>Màu: <?php echo $value['color'] ?> </span>
                   </div>
                   <div class="price-rating">
-                    <span>SL trong kho: <?php echo $value['soluong'] ?> </span>
+                    <span>Số lượng còn: <?php echo $value['soluong'] ?> </span>
                   </div>
                   <div class="price-rating">
                     <span>Khuyến mãi: <?php echo "<b class='km_km'>" . $value['giatriKM'] ?> </span>
@@ -202,6 +210,20 @@
                             }
                             ?></span>
                   </div>
+                </div>
+
+                <div class="actions">
+                  <a href="?action=giohang&act=add_giohang&id=<?= $value['idSP'] ?>">
+                    <button onclick="" type="submit" class="cart-btn" title="Add to cart">Thêm vào giỏ</button>
+                  </a>
+                  <ul class="add-to-link">
+                    <!-- <li><a class="modal-view" href="?action=chitietmathang&id=<?= $value['idSP'] ?>&idLoaiSP=<?= $value['idLoaiSP'] ?>"> <i class="fa fa-shopping-cart"></i>                    </a></li> -->
+                    <li>
+                      <a href="?action=giohang&act=add_giohang&id=<?= $value['idSP'] ?>" class="cart-action">
+                        <i class="fa fa-shopping-cart"></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
 
               </div>
@@ -251,4 +273,65 @@
     color: black;
     font-weight: normal;
   }
+  .actions {
+    background-color: #43CCA0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+  .product-f {
+    background-color: #F0F4FC;
+    border-radius: 10px;
+    position: relative; 
+  }
+
+  .out-of-stock {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      /* background-color: rgba(255, 0, 0, 0.8); */
+      color: white;
+      padding: 5px;
+      font-weight: bold;
+      border-radius: 5px;
+  }
+  .sale-badge {
+    position: absolute;
+    top: 1px;
+    left: 110px;
+    width: 80px;
+    height: 80px;
+    z-index: 10;
+  }
+
+  .sale-badge img {
+    width: 100%; 
+    height: 100%;
+  }
+
+  .sale-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+  }
+
+  .product-price {
+      background-color: #DDEDFA;
+      padding: 10px;
+      border-radius: 5px;
+  }
+
+  .actions {
+      background-color: #43CCA0;
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid black;
+  }
+
+
+  
 </style>

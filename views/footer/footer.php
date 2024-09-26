@@ -1,4 +1,47 @@
-
+<!-- service area start -->
+    <!-- <div class="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="single-service">
+                        <div class="sirvice-img">
+                            <img src="https://img.icons8.com/?size=100&id=kr0we7WaeAkm&format=png&color=000000" alt="Service Icon" style="width: 80px; height: 79px;">
+                        
+                        </div>
+                        <div class="service-info">
+                            <h3>UY TÍN</h3>
+                            <p>Giày thể thao – Lựa chọn đáng tin cậy cho mọi bước đi.</p>
+                            <p>Tin tưởng ở chúng tôi – Giày chất lượng trong từng bước chân.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single-service">
+                        <div class="sirvice-img">
+                            <img src="https://img.icons8.com/?size=100&id=42158&format=png&color=000000" alt="Service Icon" style="width: 80px; height: 79px;">
+                        </div>
+                        <div class="service-info">
+                            <h3>CHẤT LƯỢNG</h3>
+                            <p>Giày bền, đẹp – Khẳng định đẳng cấp của bạn</p>
+                            <p>Mỗi bước chân đều là một trải nghiệm chất lượng.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single-service">
+                        <div class="sirvice-img">
+                            <img src="https://img.icons8.com/?size=100&id=ohJF3c9aj7Hs&format=png&color=000000" alt="Service Icon" style="width: 80px; height: 79px;">
+                        </div>
+                        <div class="service-info">
+                            <h3>SANG TRỌNG</h3>
+                            <p>Đẳng cấp giày – Nơi phong cách gặp gỡ sự tinh tế.</p>
+                            <p>Giày cao cấp cho những người yêu sự hoàn hảo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
     <!-- footer top area start -->
     <div class="footer-top-area">
         <div class="container">
@@ -60,6 +103,7 @@
             </div>
         </div>
     </div>
+    
     <!-- footer top area end -->
     <!-- footer area start -->
     <footer class="footer-area">
@@ -67,7 +111,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="footer-copyright">
-                        <h5>Copyright &copy; 2023 <a href="#"> tientot36@gmail.com</a>. Thanks You</h5>
+                        <h5>Copyright &copy; 2023 <a href="#"> tientot36@gmail.com</a></h5>
                     </div>
                 </div>
                 <div class="col-sm-6">

@@ -62,7 +62,7 @@
                       <div class="text-center">
                         <br>
                         <span> Bạn đã có tài khoản? </span>
-                        <a class="dn" data-toggle="tab" href="#arrival" style="color:gray;">Đăng nhập</a>
+                        <a class="dn"  href="?action=dangnhap" style="color:gray;">Đăng nhập</a>
                       </div>
                     </div>
                   </div>

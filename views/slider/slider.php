@@ -40,48 +40,5 @@
 </div>
 <!-- slider area end -->
 
-<!-- service area start -->
-<div class="service-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="single-service">
-                    <div class="sirvice-img">
-                    <img src="public/img/service/icon-1.png" alt="" style="width: 80px; height: 79px">
-                       
-                    </div>
-                    <div class="service-info">
-                        <h3>UY TÍN</h3>
-                        <p>Giày thể thao – Lựa chọn đáng tin cậy cho mọi bước đi.</p>
-                        <p>Tin tưởng ở chúng tôi – Giày chất lượng trong từng bước chân.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="single-service">
-                    <div class="sirvice-img">
-                        <img src="public/img/service/icon-1.png" alt="">
-                    </div>
-                    <div class="service-info">
-                        <h3>CHẤT LƯỢNG</h3>
-                        <p>Giày bền, đẹp – Khẳng định đẳng cấp của bạn</p>
-                        <p>Mỗi bước chân đều là một trải nghiệm chất lượng.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="single-service">
-                    <div class="sirvice-img">
-                        <img src="public/img/service/icon-1.png" alt="">
-                    </div>
-                    <div class="service-info">
-                        <h3>SANG TRỌNG</h3>
-                        <p>Đẳng cấp giày – Nơi phong cách gặp gỡ sự tinh tế.</p>
-                        <p>Giày cao cấp cho những người yêu sự hoàn hảo.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- service area end -->
