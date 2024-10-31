@@ -150,96 +150,80 @@
 
         <?php foreach ($data_sanphamcuahang as $value) { ?>
 
-          <div class="col-sm-3">
-            <div class="single-product">
-              <div class="product-f">
-                <a href="?action=chitietmathang&id=<?= $value['idSP'] ?>&idLoaiSP=<?= $value['idLoaiSP'] ?>"><img src="admin/public_admin/image/sanpham/<?php echo $value['anh1'] ?>" alt="Product Title" class="img-products" /></a>
-                <!-- <div class="actions-btn">
-                  <a href="?action=chitietmathang&id=<?= $value['idSP'] ?>&idLoaiSP=<?= $value['idLoaiSP'] ?>">
-                    <center><i style="font-size: 30px;color:black;" class="fa fa-shopping-cart"></i></center>
-                  </a>
-                  <a href="?action=chitietmathang&id=<?= $value['idSP'] ?>&idLoaiSP=<?= $value['idLoaiSP'] ?>" data-toggle="modal">
-                    <center><i style="font-size: 20px;" class="fa fa-eye"></i></center>
-                  </a>
-                </div> -->
-                 <!-- Display "Out of Stock" icon if quantity is 0 -->
-                 <?php if ($value['soluong'] == 0) { ?>
-                        <div class="out-of-stock">
-                            <img src="/images/sold_out.png" alt="Out of Stock" />
-                        </div>
-                  <?php } ?>
+<div class="col-sm-3">
+    <div class="single-product">
+        <div class="product-f">
+            <a href="?action=chitietmathang&id=<?= $value['idSP'] ?>&idLoaiSP=<?= $value['idLoaiSP'] ?>">
+                <img src="admin/public_admin/image/sanpham/<?php echo $value['anh1'] ?>" alt="Product Title" class="img-products" />
+            </a>
 
-                    <!-- Display Sale Percentage if there's a promotion -->
-                  <?php if ($value['giatriKM'] != 0) { ?>
-                        <div class="sale-badge">
-                          <img src="images/sales.png" alt="Sale Badge">
-                          <span class="sale-text"><?= $value['giatriKM'] ?>%</span>                           
-                         <!-- <img src="/images/sales.png" style="width: 50px; " alt="Sales"/> -->
-                        </div>
-                  <?php } ?>
+            <!-- Display "Out of Stock" icon if quantity is 0 -->
+            <?php if ($value['soluong'] == 0) { ?>
+                <div class="out-of-stock">
+                    <img src="/images/sold_out.png" alt="Out of Stock" />
+                </div>
+            <?php } ?>
 
+            <!-- Display Sale Percentage if there's a promotion -->
+            <?php if ($value['giatriKM'] != 0) { ?>
+                <div class="sale-badge">
+                    <img src="images/sales.png" alt="Sale Badge">
+                    <span class="sale-text"><?= $value['giatriKM'] ?>%</span>
+                </div>
+            <?php } ?>
 
-                <div class="product-price">
-                  <div class="product-name">
-                    
+            <div class="product-price">
+                <div class="product-name">
                     <a href="" title="" class="name-product"> <?php echo $value['tenSP'] ?> </a>
-                  </div>
-                  <!-- <div class="price-rating">
-                    <span><?= number_format($value['Dongia']); ?> VND</span>
-                  </div> -->
-                  <div class="price-rating">
+                </div>
+                <div class="price-rating">
                     <span>Size: <?php echo $value['size'] ?> </span>
-                  </div>
-                  <div class="price-rating">
+                </div>
+                <div class="price-rating">
                     <span>Màu: <?php echo $value['color'] ?> </span>
-                  </div>
-                  <div class="price-rating">
+                </div>
+                <div class="price-rating">
                     <span>Số lượng còn: <?php echo $value['soluong'] ?> </span>
-                  </div>
-                  <div class="price-rating">
+                </div>
+                <div class="price-rating">
                     <span>Khuyến mãi: <?php echo "<b class='km_km'>" . $value['giatriKM'] ?> </span>
-                  </div>
-                  <div class="price-rating">
-                    <span> <?php if ($value['giatriKM'] != 0) {
-                              echo " <strike><i>" . number_format($value['Dongia']) . " VND</i></strike><br> ";
-                              echo " <i class='fa fa-arrow-right'></i> ";
-                              echo number_format($value['Dongia'] - ($value['Dongia'] * $value['giatriKM'] / 100)) . " VND";
-                            } else {
-                              echo "<br>";
-                              echo number_format($value['Dongia']) . " VND";
-                            }
-                            ?></span>
-                  </div>
                 </div>
-
-                <div class="actions">
-                  <a href="?action=giohang&act=add_giohang&id=<?= $value['idSP'] ?>">
-                    <button onclick="" type="submit" class="cart-btn" title="Add to cart">Thêm vào giỏ</button>
-                  </a>
-                  <ul class="add-to-link">
-                    <!-- <li><a class="modal-view" href="?action=chitietmathang&id=<?= $value['idSP'] ?>&idLoaiSP=<?= $value['idLoaiSP'] ?>"> <i class="fa fa-shopping-cart"></i>                    </a></li> -->
-                    <li>
-                      <a href="?action=giohang&act=add_giohang&id=<?= $value['idSP'] ?>" class="cart-action">
-                        <i class="fa fa-shopping-cart"></i>
-                      </a>
-                    </li>
-                  </ul>
+                <div class="price-rating">
+                    <span> 
+                    <?php if ($value['giatriKM'] != 0) {
+                            echo " <strike><i>" . number_format($value['Dongia']) . " VND</i></strike><br> ";
+                            echo " <i class='fa fa-arrow-right'></i> ";
+                            echo number_format($value['Dongia'] - ($value['Dongia'] * $value['giatriKM'] / 100)) . " VND";
+                        } else {
+                            echo "<br>";
+                            echo number_format($value['Dongia']) . " VND";
+                        }
+                    ?>
+                    </span>
                 </div>
-
-              </div>
-
-
-
-            
-
-
-
-
-
             </div>
-          </div>
 
-        <?php } ?>
+            <div class="actions">
+                <?php if ($value['soluong'] > 0) { ?>
+                    <a href="?action=giohang&act=add_giohang&id=<?= $value['idSP'] ?>">
+                        <button type="submit" class="cart-btn" title="Add to cart">Thêm vào giỏ</button>
+                    </a>
+                <?php } else { ?>
+                    <p class="out-of-stock-warning" style="color: red; font-weight: bold;">Hết hàng</p>
+                <?php } ?>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<?php } ?>
+
+
+
+
+
+
       </div>
       <!--features_items-->
 

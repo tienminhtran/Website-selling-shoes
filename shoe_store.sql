@@ -84,21 +84,22 @@ CREATE TABLE `gopy` (
 -- Đang đổ dữ liệu cho bảng `gopy`
 --
 
+
 INSERT INTO `gopy` (`idgopy`, `idSP`, `email`, `noidung`) VALUES
-(1, 1, 'abc@gmail.com', 'GIÀY TÂY NAM CÔNG SỞ DA'),
-(2, 1, 'abc@gmial.com', 'giày đẹp thiệt'),
-(3, 9, 'ngophitin2001@gmal.com', 'GIày này cũng ổn'),
-(4, 9, 'abc@gmail.com', 'Giày công sở 2 này đẹp và bền'),
-(5, 2, 'abc@gmail.com', 'Giày này cho học sinh có phù hợp không?'),
-(6, 5, 'ngophitin2001@gmal.com', 'Giày học ính nam này đẹp, bền '),
-(7, 6, 'ngophitin2001@gmal.com', 'Giày bền, đẹp và rất đáng tiền'),
-(8, 4, 'abc@gmial.com', 'Giày da bò này là da thiệt nè'),
-(9, 3, 'gopy@gmail.com', 'Giày này hợp thời trang này'),
-(10, 7, 'ngophitin2001@gmal.com', 'GIÀY THỜI TRANG này đẹp và bền á ad'),
-(11, 8, 'ngophitin2001@gmal.com', 'Loại giày này hợp với mình nè'),
-(12, 6, 'adsadsa@gmail.com', 'sadsads'),
-(13, 7, '', 'dsadsadsa'),
-(14, 1, 'adsadsa@gmail.com', 'hii');
+(1, 1, 'shopGoVap@gmail.com', 'Giày tây nam này mang rất thoải mái.'),
+(2, 1, 'shopGoVap@gmail.com', 'Sản phẩm chất lượng, đúng mô tả.'),
+(3, 9, 'userHCM@gmail.com', 'Mẫu giày này có thiết kế khá ổn, giá hợp lý.'),
+(4, 9, 'HCMshop@gmail.com', 'Giày đẹp, nhưng cần cải thiện về độ bền.'),
+(5, 2, 'studentSG@gmail.com', 'Giày này phù hợp với học sinh, chất lượng ổn.'),
+(6, 5, 'shopGoVap@gmail.com', 'Thiết kế giày nam rất chắc chắn, đáng mua.'),
+(7, 6, 'shopGoVap@gmail.com', 'Giày bền, đẹp, đáng tiền. Rất hài lòng.'),
+(8, 4, 'userSG@gmail.com', 'Da bò thật, cảm giác rất cao cấp khi mang.'),
+(9, 3, 'shopSG@gmail.com', 'Phong cách thời trang, dễ phối đồ.'),
+(10, 7, 'shopGoVap@gmail.com', 'Giày thời trang này thật sự đẹp và tinh tế.'),
+(11, 8, 'userHCM@gmail.com', 'Mẫu giày này rất hợp với phong cách của mình.'),
+(12, 6, 'infoHCM@gmail.com', 'Giày học sinh đẹp, bền và giá cả phải chăng.'),
+(13, 7, 'infoHCM@gmail.com', 'Thiết kế giày học sinh rất tiện lợi và hợp xu hướng.'),
+(14, 1, 'shopGV@gmail.com', 'Sản phẩm tốt, mình rất hài lòng.');
 
 -- --------------------------------------------------------
 
@@ -121,18 +122,18 @@ CREATE TABLE `hoadon` (
 --
 
 INSERT INTO `hoadon` (`idhoadon`, `idUser`, `idSP`, `tongtien`, `trangthai`, `soluongmua`, `ngaymua`) VALUES
-(26, 27, 1, 260, 1, 2, '2021-03-17'),
-(27, 27, 1, 260, 1, 2, '2021-03-17'),
-(29, 27, 1, 260, 1, 2, '2021-03-17'),
-(30, 27, 1, 260, 1, 2, '2021-03-17'),
-(31, 24, 2, 1600, 1, 8, '2021-03-18'),
-(32, 24, 1, 130, 1, 1, '2021-03-18'),
-(34, 27, 6, 650, 1, 1, '2021-03-19'),
-(35, 27, 1, 390, 1, 3, '2021-03-19'),
-(36, 27, 5, 2700, 1, 3, '2021-03-19'),
-(37, 24, 1, 130, 1, 1, '2021-03-20'),
-(38, 24, 1, 260, 0, 2, '2021-03-23'),
-(39, 24, 1, 780, 1, 6, '2021-03-23');
+(26, 27, 1, 260, 1, 2, '2024-03-17'),
+(27, 27, 1, 260, 1, 2, '2024-03-17'),
+(29, 27, 1, 260, 1, 2, '2024-03-17'),
+(30, 27, 1, 260, 1, 2, '2024-03-17'),
+(31, 24, 2, 1600, 1, 8, '2024-03-18'),
+(32, 24, 1, 130, 1, 1, '2024-03-18'),
+(34, 27, 6, 650, 1, 1, '2024-03-19'),
+(35, 27, 1, 390, 1, 3, '2024-03-19'),
+(36, 27, 5, 2700, 1, 3, '2024-03-19'),
+(37, 24, 1, 130, 1, 1, '2024-03-20'),
+(38, 24, 1, 260, 0, 2, '2024-03-23'),
+(39, 24, 1, 780, 1, 6, '2024-03-23');
 
 -- --------------------------------------------------------
 
@@ -153,14 +154,14 @@ CREATE TABLE `khuyenmai` (
 --
 
 INSERT INTO `khuyenmai` (`idKM`, `loaiKM`, `giatriKM`, `ngaybatdau`, `ngayketthuc`) VALUES
-(1, 'Không', 0, '2021-03-17', '2021-04-07'),
+(1, 'Không', 0, '2024-03-17', '2024-04-07'),
 (2, 'Sản phẩm mới', 30, '0000-00-00', '0000-00-00'),
 (3, 'Khuyến mãi đầu năm', 30, '0000-00-00', '0000-00-00'),
 (4, 'Khuyến mãi cuối năm', 30, '0000-00-00', '0000-00-00'),
 (5, 'Khuyến mãi theo dịch vu', 30, '0000-00-00', '0000-00-00'),
-(6, 'Sale sau tết', 20, '2021-03-30', '2021-04-01'),
-(7, 'Sale', 10, '2021-03-16', '2021-03-31'),
-(8, 'Noel', 20, '2021-04-06', '2021-04-09');
+(6, 'Sale sau tết', 20, '2024-03-30', '2024-04-01'),
+(7, 'Sale', 10, '2024-03-16', '2024-03-31'),
+(8, 'Noel', 20, '2024-04-06', '2024-04-09');
 
 -- --------------------------------------------------------
 
@@ -180,7 +181,7 @@ CREATE TABLE `layout` (
 --
 
 INSERT INTO `layout` (`id`, `mail`, `diachi`, `phone`) VALUES
-(1, 'n.hieuthanhhaui@gmail.com', 'Đông Anh, Hà Nội', 355668062);
+(1, 'tienminh@iuh.edu.vn', 'Gò Vấp, Hồ Chí Minh', 0869188702);
 
 -- --------------------------------------------------------
 
@@ -251,15 +252,15 @@ CREATE TABLE `sanpham` (
 --
 
 INSERT INTO `sanpham` (`idSP`, `idKM`, `idLoaiSP`, `idcolor`, `idsize`, `tenSP`, `Dongia`, `anh1`, `anh2`, `anh3`, `ngaynhap`, `mota`, `soluong`) VALUES
-(1, 1, 1, 1, 1, 'Giày Tây ', 130000, '20.png', '8.png', '17.png', '2021-2-15', '', 0),
-(2, 1, 1, 1, 1, 'giày học sinh1', 200, '18.png', '10.png', '13.png', '2021-2-16', '', 32),
-(4, 1, 3, 4, 8, 'Giày Lười Da Bò QS49', 790, '2.png', '22.png', '25.png', '2021-2-15', '<p>Gi&agrave;y Lười Da B&ograve; QS49</p>', 45),
-(5, 1, 1, 1, 1, 'giày học sinh', 900, '20.png', '25.png', '31.png', '2021-12-09', '', 17),
-(6, 1, 1, 1, 1, 'giày học sinh', 650, '2.png', '8.png', '13.png', '2021-2-23', '', 49),
-(9, 2, 1, 8, 9, 'Giày công sở 2', 300, '1.png', '2.png', '3.png', '2021-2-15', '<p><strong>Gi&agrave;y c&ocirc;ng sở nam đẹp nhất</strong></p>', 50),
-(21, 1, 3, 3, 11, 'Giày da bò nam đẹp', 500, '13.png', '14.png', '26.png', '2021-01-09', '<p><strong><em>Gi&agrave;y da b&ograve; nam đẹp, ph&ugrave; hợp với nam giới, gi&uacute;p bạn lịch l&atilde;m hơn</em></strong></p>', 498),
-(73, 6, 3, 1, 1, 'menb', 160000000, '7.png', '10.png', '18.png', '2021-03-11', '<p>no ct</p>', 45),
-(74, 5, 3, 5, 11, 'Hồng AN', 2000099, '17.png', '29.png', '31.png', '2021-03-19', '<p>no</p>\r\n', 45);
+(1, 1, 1, 1, 1, 'Giày Tây ', 130000, '20.png', '8.png', '17.png', '2024-2-15', '', 0),
+(2, 1, 1, 1, 1, 'Giày hs nam-nữ', 200, '18.png', '10.png', '13.png', '2024-2-16', '', 32),
+(4, 1, 3, 4, 8, 'Giày Lười Da Bò QS49', 790, '2.png', '22.png', '25.png', '2024-2-15', '<p>Gi&agrave;y Lười Da B&ograve; QS49</p>', 45),
+(5, 1, 1, 1, 1, 'Giày học sinh', 900, '20.png', '25.png', '31.png', '2024-12-09', '', 17),
+(6, 1, 1, 1, 1, 'Giày học sinh', 650, '2.png', '8.png', '13.png', '2024-2-23', '', 49),
+(9, 2, 1, 8, 9, 'Giày công sở', 300, '1.png', '2.png', '3.png', '2024-2-15', '<p><strong>Gi&agrave;y c&ocirc;ng sở nam đẹp nhất</strong></p>', 50),
+(21, 1, 3, 3, 11, 'Giày da bò nam đẹp', 500, '13.png', '14.png', '26.png', '2024-01-09', '<p><strong><em>Gi&agrave;y da b&ograve; nam đẹp, ph&ugrave; hợp với nam giới, gi&uacute;p bạn lịch l&atilde;m hơn</em></strong></p>', 498),
+(73, 6, 3, 1, 1, 'Giày Nam', 160000000, '7.png', '10.png', '18.png', '2024-03-11', '<p>no ct</p>', 45),
+(74, 5, 3, 5, 11, 'Giày Running', 2000099, '17.png', '29.png', '31.png', '2024-03-19', '<p>no</p>\r\n', 45);
 
 -- --------------------------------------------------------
 
@@ -315,17 +316,17 @@ CREATE TABLE `user` (
   `sodienthoai` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `tendangnhap` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `matkhau` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `idQuyen` int(11) NOT NULL
+  `idQuyen` int(11) NOT NULL,
+  `recovery_code` varchar(255)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
 -- Đang đổ dữ liệu cho bảng `user`
---
+INSERT INTO `user` (`idUser`, `ho`, `ten`, `email`, `diachi`, `gioitinh`, `sodienthoai`, `tendangnhap`, `matkhau`, `idQuyen`, `recovery_code`) VALUES
+(24, 'Trần', 'Tiến', 'tientran@gmail.com', 'Gò Vấp', 'nam', '0123456789', 'admin', '123', 1, NULL),
+(25, 'Nguyễn', 'Tài', 'hung.tran@gmail.com', 'TP HCM', 'nam', '0123456789', 'tai', '123', 0, NULL),
+(26, 'Lê', 'An', 'anle@gmail.com', 'HCM', 'nu', '0123456789', 'an', '123', 2, NULL);
 
-INSERT INTO `user` (`idUser`, `ho`, `ten`, `email`, `diachi`, `gioitinh`, `sodienthoai`, `tendangnhap`, `matkhau`, `idQuyen`) VALUES
-(24, 'hieu', 'thanh', 'n.hieuthanhhaui@gmail.com', 'hà nội', 'nam', '0355668062', 'hieuthanh99', '123', 1),
-(25, 'Nguyễn', 'Hiếu', 'hieuthanh99@gmail.com', 'Hà nội', 'nu', '0355668062', 'thanhps', '', 0),
-(27, 'An', 'An', 'hieuthanh99', 'hà nội', 'nam', '321321421', 'an123', '123', 2);
+
 
 --
 -- Chỉ mục cho các bảng đã đổ

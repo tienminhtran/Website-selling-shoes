@@ -45,6 +45,9 @@
                                              <li>
                                                  <a href="?action=dangxuat" onclick="TBdangxuat()">Thoát</a>
                                              </li>
+                                             <!-- <li>
+                                                    <a href="?action=vechungtoi">Về chúng tôi</a>
+                                             </li> -->
 
                                              <?php if ($_SESSION['admin'] == true || $_SESSION['banhang'] == true) { ?>
                                                  <li>
@@ -58,6 +61,7 @@
                                              <li>
                                                  <a href="?action=dangky">Đăng ký </a>
                                              </li>
+
 
                                          <?php } ?>
 

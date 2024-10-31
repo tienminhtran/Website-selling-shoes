@@ -19,6 +19,24 @@
         case 'luachon':
             require_once('cuahang/cuahang.php');
             break;
+        case 'vechungtoi':
+            require_once('gioithieu/vechungtoi.php');
+            break;  
+        case 'banquyen':
+            require_once('gioithieu/banquyen.php');
+            break;  
+
+            // thue; baomat; dieukhoan
+        case 'doitra':
+            require_once('gioithieu/doitra.php');
+            break;  
+        case 'baomat':
+            require_once('gioithieu/baomat.php');
+            break;
+        case 'dieukhoan':
+            require_once('gioithieu/dieukhoan.php');
+            break;
+
 
 
 
@@ -59,6 +77,10 @@
             break;
         case 'hoanthanhdonhang':
             require_once('hoanthanhdonhang/hoanthanhdonhang.php');
+            # code...
+            break;
+        case 'vechungtoi':
+            require_once('vechungtoi/vechungtoi.php');
             # code...
             break;
 

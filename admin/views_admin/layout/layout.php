@@ -19,22 +19,31 @@
                 </a>
 
                 <div class="navbar-custom-menu" style="margin-right:2%">
-                    <ul class="nav navbar-nav">
-                        <!-- User Account: style can be found in dropdown.less -->
-                        <li class="dropdown user user-menu">
-                            <a href="#">
-
-                                <span class="hidden-xs"> <?php
-                                                            if (isset($_SESSION['tendangnhap'])) {
-                                                                echo "Xin chào " . $_SESSION['tendangnhap'];
-                                                            } else {
-                                                                echo "Xin Chào ...";
-                                                            }
-
-                                                            ?></span>
-                            </a>
-                        </li>
-                    </ul>
+                <ul class="nav navbar-nav">
+                    <!-- User Account: style can be found in dropdown.less -->
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="hidden-xs"> 
+                                <?php
+                                    if (isset($_SESSION['tendangnhap'])) { ?>
+                                        <img src="/images/edubirdie.png" alt="Logo" style="width: 50px;">
+                                        <?php echo "Xin chào " . htmlspecialchars($_SESSION['tendangnhap']); ?>
+                                    <?php } else { ?>
+                                        <?php echo "Xin Chào ..."; ?>
+                                    <?php }
+                                ?>
+                            </span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/index.php" class="<?php echo (parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) == '' && $_GET['action'] == 'trangchu') ? 'active' : ''; ?>">
+                                    Trang chủ
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
                 </div>
             </nav>
         </header>
@@ -100,3 +109,9 @@
             <section class="content">
 
                 <!-- ./wrapper -->
+<style>
+    .dropdown-menu .active a {
+    background-color: #f0f0f0; /* Màu nền cho mục đang hoạt động */
+    color: #333; /* Màu chữ cho mục đang hoạt động */
+}
+</style>

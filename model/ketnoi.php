@@ -14,6 +14,11 @@
             $password = "";
             $dbname = "shoe_store";
 
+            // $host = '127.0.0.1:3306';
+			// $username = 'hvfuydkq';
+			// $password = '5Is0B07NyV.tv;';
+			// $dbname = 'hvfuydkq_shoe_store';
+
             //tạo kết nối với cơ sở dữ liệu
             $this->connect = new mysqli($host, $username, $password, $dbname);
     

@@ -1,3 +1,6 @@
+<div class="loading">
+        <div class="boxLoading"></div>
+</div>
 <div class="shopping-cart">
   <div class="container">
     <div class="row">
@@ -104,3 +107,15 @@
     return false;
   }
 </script>
+
+<script>
+    window.addEventListener('load', function() {
+        let loadingElement = document.querySelector('.loading');
+        loadingElement.style.transition = 'opacity 2s ease-out';
+        loadingElement.style.opacity = '0';
+
+        setTimeout(function() {
+            loadingElement.style.display = 'none';
+        }, 500);
+    });
+    </script>

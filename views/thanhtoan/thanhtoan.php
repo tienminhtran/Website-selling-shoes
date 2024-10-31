@@ -36,13 +36,28 @@
 								<h3><strong>Chi tiết hóa đơn</strong></h3>
 							</div>
 							<div class="custom-input">
-								<form action="?action=hoanthanhdonhang&idUser=<?php echo $data_user['idUser']; ?>" method="post">
-									<input type="text" name="NguoiNhan" placeholder="Người nhận" required value="<?php echo $data_user['ho'] . ' ' . $data_user['ten']; ?>" />
-									<input type="email" name="Email" placeholder="Địa chỉ Email.." required value="<?php echo $data_user['email']; ?>" />
-									<input type="text" name="SDT" placeholder="Số điện thoại.." required pattern="[0-9]+" minlength="10" value="<?php echo $data_user['sodienthoai']; ?>" />
-									<input type="text" name="DiaChi" placeholder="Đại chỉ giao hàng" required value="<?php echo $data_user['diachi']; ?>" />
-									<br>
-									<div class="submit-text">
+								<form action="?action=hoanthanhdonhang&idUser=<?php echo $data_user['idUser']; ?>" method="post" style="max-width: 500px; margin: auto;">
+									<div class="form-group">
+										<label for="NguoiNhan">Người nhận:</label>
+										<input type="text" id="NguoiNhan" name="NguoiNhan" placeholder="Người nhận" required value="<?php echo htmlspecialchars($data_user['ho'] . ' ' . $data_user['ten']); ?>" />
+									</div>
+
+									<div class="form-group">
+										<label for="Email">Địa chỉ Email:</label>
+										<input type="email" id="Email" name="Email" placeholder="Địa chỉ Email.." required value="<?php echo htmlspecialchars($data_user['email']); ?>" />
+									</div>
+
+									<div class="form-group">
+										<label for="SDT">Số điện thoại:</label>
+										<input type="text" id="SDT" name="SDT" placeholder="Số điện thoại.." required pattern="[0-9]+" minlength="10" value="<?php echo htmlspecialchars($data_user['sodienthoai']); ?>" />
+									</div>
+
+									<div class="form-group">
+										<label for="DiaChi">Địa chỉ giao hàng:</label>
+										<input type="text" id="DiaChi" name="DiaChi" placeholder="Địa chỉ giao hàng" required value="<?php echo htmlspecialchars($data_user['diachi']); ?>" />
+									</div>
+									
+									<div class="submit-text" style="margin-top: 20px;">
 										<button type="submit">Thanh toán</button>
 									</div>
 								</form>

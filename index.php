@@ -148,11 +148,7 @@
             $index->list();
             break;
 
-        case 'huy_session':
-            require_once('controller/hoanthanhdonhang_controller.php');
-            $index = new hoanthanhdonhang();
-            $index->huy_session();
-            break;
+
 
 
 

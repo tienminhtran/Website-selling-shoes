@@ -106,19 +106,28 @@
 
          function insert($idKM, $idLoaiSP, $idcolor, $idsize, $tenSP, $Dongia, $anh1, $anh2, $anh3, $ngaynhap, $mota, $soluong) 
          {
-
-            $query= "INSERT INTO sanpham (idKM, idLoaiSP, idcolor, idsize, tenSP, Dongia, anh1, anh2, anh3, ngaynhap, mota, soluong) 
-            VALUES ('$idKM','$idLoaiSP','$idcolor', '$idsize', '$tenSP', '$Dongia', '$anh1', '$anh2', '$anh3', '$ngaynhap', '$mota', '$soluong') ";
-
-            $result = $this->conn->query($query);
-
-            if($result == true){
-                header('location: ?action=sanpham');
-            }
-            else{
-                header('location: ?action=them_sanpham_giaodien');
-            }
+             // Thoát các ký tự đặc biệt
+             $tenSP = mysqli_real_escape_string($this->conn, $tenSP);
+             $mota = mysqli_real_escape_string($this->conn, $mota);
+         
+             $query = "INSERT INTO sanpham (idKM, idLoaiSP, idcolor, idsize, tenSP, Dongia, anh1, anh2, anh3, ngaynhap, mota, soluong) 
+             VALUES ('$idKM','$idLoaiSP','$idcolor', '$idsize', '$tenSP', '$Dongia', '$anh1', '$anh2', '$anh3', '$ngaynhap', '$mota', '$soluong')";
+         
+             // Debug: In ra câu query và các giá trị
+             echo "SQL Query: " . $query . "<br>";
+         
+             $result = $this->conn->query($query);
+         
+             if ($result == true) {
+                 echo "Insert successful.";
+                 header('location: ?action=sanpham');
+             } else {
+                 echo "Insert failed: " . $this->conn->error; // In ra lỗi MySQL
+                 header('location: ?action=them_sanpham_giaodien');
+             }
          }
+         
+         
 
 // nếu thêm vào một sản phẩm đã có thì cộng vào số lượng
          function insert_trung($idSP, $soluong_them) 

@@ -77,9 +77,9 @@
                         </div>
                         <div class="footer-menu">
                             <ul>
-                                <li><a href="#">Điều khoản sử dụng</a></li>
-                                <li><a href="#">Chính sách bảo mật</a></li>
-                                <li><a href="#">Thuế-Giá trị gia tăng</a></li>
+                                <li><a href="/?action=dieukhoan">Điều khoản sử dụng</a></li>
+                                <li><a href="/?action=baomat">Chính sách bảo mật</a></li>
+                                <li><a href="/?action=doitra">Chính sách đổi trả</a></li>
                             
                             </ul>
                         </div>
@@ -92,9 +92,9 @@
                         </div>
                         <div class="footer-menu">
                             <ul>
-                                <li><a href="about-us.html">Về chúng tôi</a></li>
-                                <li><a href="#">Cửa hàng</a></li>
-                                <li><a href="#">Bản quyền</a></li>
+                                <li><a href="/?action=vechungtoi">Về chúng tôi</a></li>
+                                <li><a href="/?action=cuahang1">Cửa hàng</a></li>
+                                <li><a href="/?action=banquyen">Bản quyền</a></li>
                                 
                             </ul>
                         </div>

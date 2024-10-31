@@ -72,8 +72,8 @@
 
 
                             <form action="../../cart/index" method="POST">
-                                <input type="hidden" name="namess" value="<?php echo $product->name; ?>">
-                                <input type="hidden" name="idproductss" value="<?php echo number_format($product->id); ?>">
+                                <!-- <input type="hidden" name="namess" value="<?php echo $product->name; ?>">
+                                <input type="hidden" name="idproductss" value="<?php echo number_format($product->id); ?>"> -->
                                 <div class="select-catagory">
                                     <div class="size-select">
                                         <label class="required">
